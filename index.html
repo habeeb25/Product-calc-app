@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purchses Calculator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <div id="app" class="app-wrapper">
+      <h2>Purchases Calculator</h2>
+      <div class="input" id="input">
+        <h3>Product odered</h3>
+        <p>Your stock now</p>
+        <p class="input--el" id="input_el">0</p>
+        <button type="submit" class="increment--btn" onclick="itemCounted()">
+          ADD STOCK
+        </button>
+      </div>
+      <div class="output" id="output">
+        <h3>Cost of Product</h3>
+        <p>Gross total</p>
+        <p class="output--el" id="output_el"></p>
+      </div>
+      <div class="alert" id="alert">
+        <p class="alert--el" id="alert_el">
+          <span class="warning-sign" id="warning_sign">Watch here!!</span>
+        </p>
+      </div>
+      <div class="checkout" id="checkout">
+        <p>Your order is</p>
+        <p class="checkout--el" id="checkoutEl">0</p>
+        <p><small>Thank you!</small></p>
+        <button type="submit" class="checkout--btn" onclick="order()">
+          CHECKOUT
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

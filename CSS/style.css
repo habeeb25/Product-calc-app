@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../images/snow-mountain.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset: 0;
+  background: rgba(35, 37, 121, 0.6);
+  z-index: -1;
+}
+
+.app-wrapper {
+  margin-top: 2em;
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrapper > div {
+  padding: 1em 0;
+  border: 1px double #e8e823;
+  width: min(480px, 100%);
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px -5px rgb(36, 35, 35),
+    5px 5px 10px -5px rgb(31, 30, 30);
+}
+
+div.alert {
+  padding: 2em 0;
+}
+button {
+  display: inline-block;
+  padding: 0.7em 1.2em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px outset;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.increment--btn {
+  background: #5ef350;
+  font-weight: 550;
+  color: #333333;
+}
+
+.increment--btn:hover {
+  background: #147725;
+  color: #eeeeee;
+}
+
+.checkout--btn {
+  background: #f0880d;
+  font-weight: 600;
+}
+.checkout--btn:hover {
+  background: #f3c731;
+}
+
+h2,
+h3 {
+  color: darkslategray;
+}
+h2 {
+  margin-bottom: 1em;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px #222;
+}
+
+p {
+  color: gray;
+  padding: 0 0 0.5em;
+}
+
+.input--el,
+.output--el {
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+.checkout--el {
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+
+.alert--el {
+  color: rgb(12, 78, 12);
+  font-weight: 500;
+  padding: 1em;
+}
+
+.warning-sign {
+  color: #644a02;
+}
