@@ -23,6 +23,7 @@ let itemCounted = () => {
   // Alert out function
   if (grossTotal === bankAccount || grossTotal > bankAccount) {
     purchaseAlert.innerHTML = "Customer is bankrupt";
+    document.getElementById("increment_btn").style.opacity = "0";
   } else if (grossTotal > setBudget && grossTotal <= bankAccount / 2) {
     purchaseAlert.innerText =
       "Customer has exceeds  buget but can still afford";
