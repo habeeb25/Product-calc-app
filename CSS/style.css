@@ -37,7 +37,8 @@ body::after {
 .app-wrapper > div {
   padding: 1em 0;
   border: 1px double #e8e823;
-  width: min(480px, 100%);
+  width: 90%;
+  max-width: 1080px;
   margin: 0 auto;
   background: white;
   border-radius: 10px;
